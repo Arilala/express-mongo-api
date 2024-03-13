@@ -1,0 +1,19 @@
+[
+    {
+    
+        "fullName":"Jone Doe",
+        "userName":"jonedoe",
+        "password":"123456",
+        "confirmPassword":"123456",
+        "gender":"male"
+    },
+
+    {
+        
+        "fullName":"Michael M. Williams",
+        "userName":"michael",
+        "password":"123456",
+        "confirmPassword":"123456",
+        "gender":"male"
+    }
+]
