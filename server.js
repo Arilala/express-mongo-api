@@ -12,7 +12,7 @@ import 'dotenv/config'
 import {app,server} from "./socket/socket.js"
 const PORT = process.env.PORT || 5000;
 
-import ftp  from 'ftp'
+
 
 app.use(express.json())
 app.use(cookieParser())
