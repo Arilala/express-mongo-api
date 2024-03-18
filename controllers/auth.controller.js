@@ -99,7 +99,7 @@ export const login =async (req, res) => {
   }
 };
 
-export const logout = (req, res) => {
+export const logout = (_req, res) => {
   try {
     
     res.cookie("jwt","",{maxAge:0})

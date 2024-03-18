@@ -25,7 +25,7 @@ const userSchema = new mongoose.Schema({
     email: {
         type     : String,
         trim     : true,
-        required : [true, 'L’email est obligatoire'],
+        required : [true, 'L\'email est obligatoire'],
         unique   : true, // index unique
         lowercase: true
         
@@ -45,6 +45,14 @@ userSchema.pre('save',function(next){
 
     next();
 })
+
+userSchema.set('toJSON', {
+    transform: function (_doc, ret, _options) {
+        ret.id = ret._id;
+        delete ret._id;
+        delete ret.__v;
+    }
+}); 
 
 const User = mongoose.model("User", userSchema);
 
